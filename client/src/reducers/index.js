@@ -1,16 +1,9 @@
 import { combineReducers } from 'redux';
-import cards from './cards';
+import boards from './boards';
 
 const rootReducer = combineReducers({
-  cards,
+  boards,
 });
 
-//initial store
-//{}
-
-// apps reducer
-// {
-//  apps:[]
-// }
 
 export default rootReducer;

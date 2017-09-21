@@ -1,7 +1,7 @@
 class Api::BoardsController < ApplicationController
   before_action :set_board, only: [:show, :update, :destroy]
   
-    def index
+    def index      
       render json: Board.all.order(created_at: :desc)
     end
   
@@ -31,7 +31,7 @@ class Api::BoardsController < ApplicationController
     end
   
     private
-      def set_app
+      def set_board
         @board = Board.find(params[:id])
       end
   
